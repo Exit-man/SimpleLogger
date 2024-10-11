@@ -18,4 +18,8 @@
     <ProjectReference Include="..\SimpleLogger\SimpleLogger.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Creational\" />
+  </ItemGroup>
+
 </Project>

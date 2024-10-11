@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>netstandard2.0</TargetFramework>
+	  <Platforms>AnyCPU;x64</Platforms>
+	  <Configurations>Debug;Release;</Configurations>
+	  <Version>1.0.0</Version>
+	  <Description>SimpleLogger Log to file or List</Description>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <PackageId>SimpleLogger</PackageId>
+	  <Authors>Barnabas Szegleti</Authors>
+	  <Company></Company>
+	  <RootNamespace>SimpleLogger</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="8.1.1" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+			<_Parameter1>$(AssemblyName).UnitTest</_Parameter1>
+		</AssemblyAttribute>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+			<_Parameter1>$(AssemblyName).IntegTest</_Parameter1>
+		</AssemblyAttribute>
+	</ItemGroup>
+
+</Project>
